@@ -26,6 +26,14 @@
 			<Item Name="run.vi" Type="VI" URL="../led_player/run.vi"/>
 			<Item Name="start.vi" Type="VI" URL="../led_player/start.vi"/>
 		</Item>
+		<Item Name="typedefs" Type="Folder">
+			<Item Name="state_control.ctl" Type="VI" URL="../typedefs/state_control.ctl"/>
+		</Item>
+		<Item Name="strain_gauge" Type="Folder">
+			<Item Name="strain_gauge_run.vi" Type="VI" URL="../strain_gauge/strain_gauge_run.vi"/>
+			<Item Name="strain_correcter.vi" Type="VI" URL="../strain_gauge/strain_correcter.vi"/>
+			<Item Name="strain_gauge_start.vi" Type="VI" URL="../strain_gauge/strain_gauge_start.vi"/>
+		</Item>
 		<Item Name="daq_sound_output.vi" Type="VI" URL="../daq_sound_output.vi"/>
 		<Item Name="get_period.vi" Type="VI" URL="../get_period.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
@@ -34,8 +42,8 @@
 		<Item Name="trigger_check_press.vi" Type="VI" URL="../trigger_control/trigger_check_press.vi"/>
 		<Item Name="trigger_start.vi" Type="VI" URL="../trigger_control/trigger_start.vi"/>
 		<Item Name="write_samples_per_sec.vi" Type="VI" URL="../write_samples_per_sec.vi"/>
-		<Item Name="state_control.ctl" Type="VI" URL="../state_control.ctl"/>
 		<Item Name="thermocouple.vi" Type="VI" URL="../thermocouple.vi"/>
+		<Item Name="sound_processor.vi" Type="VI" URL="../sound_processor.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="DAQmx Create Virtual Channel.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Virtual Channel.vi"/>
@@ -325,6 +333,10 @@
 				<Item Name="DAQmx Read (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D DBL NChan 1Samp).vi"/>
 				<Item Name="DAQmx Read (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D DBL 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Read.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read.vi"/>
+				<Item Name="DAQmx Perform Shunt Calibration Ex (Strain).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Perform Shunt Calibration Ex (Strain).vi"/>
+				<Item Name="DAQmx Perform Shunt Calibration Ex (Bridge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Perform Shunt Calibration Ex (Bridge).vi"/>
+				<Item Name="DAQmx Perform Shunt Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Perform Shunt Calibration.vi"/>
+				<Item Name="DAQmx Perform Bridge Offset Nulling Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Perform Bridge Offset Nulling Calibration.vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
