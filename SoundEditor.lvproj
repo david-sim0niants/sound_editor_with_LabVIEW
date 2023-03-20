@@ -12,8 +12,17 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Controls/Typedef" Type="Folder"/>
-		<Item Name="Subs" Type="Folder"/>
+		<Item Name="Subs" Type="Folder">
+			<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+			<Item Name="set_volume_leds.vi" Type="VI" URL="../set_volume_leds.vi"/>
+			<Item Name="set_volume_leds_avg.vi" Type="VI" URL="../set_volume_leds_avg.vi"/>
+			<Item Name="trigger_check_press.vi" Type="VI" URL="../trigger_control/trigger_check_press.vi"/>
+			<Item Name="trigger_start.vi" Type="VI" URL="../trigger_control/trigger_start.vi"/>
+			<Item Name="write_samples_per_sec.vi" Type="VI" URL="../write_samples_per_sec.vi"/>
+			<Item Name="thermocouple.vi" Type="VI" URL="../thermocouple.vi"/>
+			<Item Name="sound_processor.vi" Type="VI" URL="../sound_processor.vi"/>
+			<Item Name="get_period.vi" Type="VI" URL="../get_period.vi"/>
+		</Item>
 		<Item Name="data" Type="Folder">
 			<Item Name="39;SING, SING, SING39; BY BENNY GOODMAN-YoutubeConvert.cc.wav" Type="Document" URL="../data/39;SING, SING, SING39; BY BENNY GOODMAN-YoutubeConvert.cc.wav"/>
 		</Item>
@@ -35,15 +44,6 @@
 			<Item Name="strain_gauge_start.vi" Type="VI" URL="../strain_gauge/strain_gauge_start.vi"/>
 		</Item>
 		<Item Name="daq_sound_output.vi" Type="VI" URL="../daq_sound_output.vi"/>
-		<Item Name="get_period.vi" Type="VI" URL="../get_period.vi"/>
-		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="set_volume_leds.vi" Type="VI" URL="../set_volume_leds.vi"/>
-		<Item Name="set_volume_leds_avg.vi" Type="VI" URL="../set_volume_leds_avg.vi"/>
-		<Item Name="trigger_check_press.vi" Type="VI" URL="../trigger_control/trigger_check_press.vi"/>
-		<Item Name="trigger_start.vi" Type="VI" URL="../trigger_control/trigger_start.vi"/>
-		<Item Name="write_samples_per_sec.vi" Type="VI" URL="../write_samples_per_sec.vi"/>
-		<Item Name="thermocouple.vi" Type="VI" URL="../thermocouple.vi"/>
-		<Item Name="sound_processor.vi" Type="VI" URL="../sound_processor.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="DAQmx Create Virtual Channel.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Virtual Channel.vi"/>
