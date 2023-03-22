@@ -14,14 +14,8 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Subs" Type="Folder">
 			<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-			<Item Name="set_volume_leds.vi" Type="VI" URL="../set_volume_leds.vi"/>
-			<Item Name="set_volume_leds_avg.vi" Type="VI" URL="../set_volume_leds_avg.vi"/>
 			<Item Name="trigger_check_press.vi" Type="VI" URL="../trigger_control/trigger_check_press.vi"/>
 			<Item Name="trigger_start.vi" Type="VI" URL="../trigger_control/trigger_start.vi"/>
-			<Item Name="write_samples_per_sec.vi" Type="VI" URL="../write_samples_per_sec.vi"/>
-			<Item Name="thermocouple.vi" Type="VI" URL="../thermocouple.vi"/>
-			<Item Name="sound_processor.vi" Type="VI" URL="../sound_processor.vi"/>
-			<Item Name="get_period.vi" Type="VI" URL="../get_period.vi"/>
 		</Item>
 		<Item Name="data" Type="Folder">
 			<Item Name="39;SING, SING, SING39; BY BENNY GOODMAN-YoutubeConvert.cc.wav" Type="Document" URL="../data/39;SING, SING, SING39; BY BENNY GOODMAN-YoutubeConvert.cc.wav"/>
@@ -43,7 +37,6 @@
 			<Item Name="strain_correcter.vi" Type="VI" URL="../strain_gauge/strain_correcter.vi"/>
 			<Item Name="strain_gauge_start.vi" Type="VI" URL="../strain_gauge/strain_gauge_start.vi"/>
 		</Item>
-		<Item Name="daq_sound_output.vi" Type="VI" URL="../daq_sound_output.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="DAQmx Create Virtual Channel.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Virtual Channel.vi"/>
@@ -246,22 +239,6 @@
 				<Item Name="Sound File Info.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Info.vi"/>
 				<Item Name="Sound File Info (path).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Info (path).vi"/>
 				<Item Name="Sound File Close.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Close.vi"/>
-				<Item Name="Sampling Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sampling Mode.ctl"/>
-				<Item Name="Sound Output Configure.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Configure.vi"/>
-				<Item Name="Sound Output Task ID.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Task ID.ctl"/>
-				<Item Name="Sound Output Start.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Start.vi"/>
-				<Item Name="Sound Output Write.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write.vi"/>
-				<Item Name="Sound Output Write (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (DBL).vi"/>
-				<Item Name="_ArrWfmsToData.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsToData.vi"/>
-				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
-				<Item Name="_ArrWfmsTo2DArr.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo2DArr.vi"/>
-				<Item Name="Sound Output Write (I16).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (I16).vi"/>
-				<Item Name="Sound Output Write (I32).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (I32).vi"/>
-				<Item Name="Sound Output Write (SGL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (SGL).vi"/>
-				<Item Name="Sound Output Write (U8).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (U8).vi"/>
-				<Item Name="Sound Output Write (DBL Single).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (DBL Single).vi"/>
-				<Item Name="Sound Output Stop.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Stop.vi"/>
-				<Item Name="Sound Output Clear.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Clear.vi"/>
 				<Item Name="DAQmx Timing (Pipelined Sample Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Pipelined Sample Clock).vi"/>
 				<Item Name="DAQmx Timing (Burst Export Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Burst Export Clock).vi"/>
 				<Item Name="DAQmx Timing (Burst Import Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Burst Import Clock).vi"/>
@@ -337,16 +314,19 @@
 				<Item Name="DAQmx Perform Shunt Calibration Ex (Bridge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Perform Shunt Calibration Ex (Bridge).vi"/>
 				<Item Name="DAQmx Perform Shunt Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Perform Shunt Calibration.vi"/>
 				<Item Name="DAQmx Perform Bridge Offset Nulling Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Perform Bridge Offset Nulling Calibration.vi"/>
-				<Item Name="DAQmx Read (Power Wfm 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power Wfm 1Chan 1Samp).vi"/>
-				<Item Name="DAQmx Read (Power Wfm 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power Wfm 1Chan NSamp).vi"/>
-				<Item Name="DAQmx Read (Power 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan 1Samp).vi"/>
-				<Item Name="DAQmx Read (Power 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan NSamp).vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvsound2.dll" Type="Document" URL="/&lt;resource&gt;/lvsound2.dll"/>
-			<Item Name="strain_to_playback_speed.vi" Type="VI" URL="../strain_to_playback_speed.vi"/>
+			<Item Name="led_player_start.vi" Type="VI" URL="../led_player/led_player_start.vi"/>
+			<Item Name="strain_to_playback_speed.vi" Type="VI" URL="../strain_gauge/strain_to_playback_speed.vi"/>
+			<Item Name="write_samples_per_sec.vi" Type="VI" URL="../sound/write_samples_per_sec.vi"/>
+			<Item Name="sound_processor.vi" Type="VI" URL="../sound/sound_processor.vi"/>
+			<Item Name="set_volume_leds.vi" Type="VI" URL="../led_player/set_volume_leds.vi"/>
+			<Item Name="led_player_run.vi" Type="VI" URL="../led_player/led_player_run.vi"/>
+			<Item Name="thermocouple_start.vi" Type="VI" URL="../thermocouple/thermocouple_start.vi"/>
+			<Item Name="thermocouple_run.vi" Type="VI" URL="../thermocouple/thermocouple_run.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
